@@ -1,3 +1,41 @@
+.content-box{
+    box-sizing: border-box;
+    flex-flow: row wrap;
+    flex-direction: row-reverse;
+}
+
+header{
+    display: border-box;
+    background-color: rgba(0, 56, 119, 0.815);
+    border-radius: 20px;
+    text-align: center;
+
+
+}
+ul{
+    list-style-type: none;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+ul li{
+    --c: goldenrod;
+    color: var(--c);
+    font-size: 16px;
+    font-family: monospace;
+    border: 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    background-color: black;
+    font-weight: bolder;
+
+}
+
+
+nav body{
+    background-color: black;
+    display: flex;
+}
 h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 80px;
@@ -8,13 +46,14 @@ h2{
 }
 p{
     font-family: 'Courier New', Courier, monospace;
+    color: grey;
     padding-right: 450px;
 }
 img{
     width: 200px;
     height: 200px;
     border: 20px groove rgba(0, 128, 107, 0.671);
-    border-radius: 20px;
+    border-radius: 20px 50px;
 }
 a{
     
@@ -22,4 +61,17 @@ a{
 .linkArea{
     padding-left: 20px;
     font-weight: bold;
+}
+button{
+    border-radius: 300px;
+    font-family: 'Courier New', Courier, monospace;
+    size: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-variant: normal;
+    color: rgba(76, 0, 130, 0.699);
+    background-color: rgba(104, 252, 220, 0.356);
+    border: 10px;
+    border-color:black;
+    text-align: center;
 }
