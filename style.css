@@ -2,12 +2,14 @@
     box-sizing: border-box;
     flex-flow: row wrap;
     flex-direction: row-reverse;
+    display:flow-root;
 }
 
 header{
     display: border-box;
-    background-color: rgba(0, 56, 119, 0.815);
-    border-radius: 20px;
+    background-color: rgba(0, 114, 245, 0.582);
+    color: white;
+    border-radius: 0px;
     text-align: center;
 
 
@@ -28,13 +30,18 @@ ul li{
     text-align: center;
     background-color: black;
     font-weight: bolder;
-
+    display: grid;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
 }
 
 
-nav body{
+body{
     background-color: black;
-    display: flex;
+    display: inline;
 }
 h1{
     font-family: 'Courier New', Courier, monospace;
@@ -43,18 +50,21 @@ h1{
 h2{
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 p{
     font-family: 'Courier New', Courier, monospace;
     color: grey;
     font-size: 20px;
     padding-right: 450px;
+    padding-top: 20px;
 }
 img{
     width: 200px;
     height: 200px;
     border: 20px groove rgba(0, 128, 107, 0.671);
     border-radius: 20px 50px;
+    
 }
 a{
     
