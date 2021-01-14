@@ -70,8 +70,10 @@ button{
     font-weight: bolder;
     font-variant: normal;
     color: rgba(76, 0, 130, 0.699);
-    background-color: rgba(104, 252, 220, 0.356);
-    border: 10px;
-    border-color:black;
+    background-color: none;
+    margin: 20px;
+    padding: 10px;
+    border: 5px solid;
+    border-color:rgba(0, 0, 0, 0.349);
     text-align: center;
 }
