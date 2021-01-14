@@ -1,10 +1,20 @@
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+}
+h2{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+}
 p{
-
+    font-family: 'Courier New', Courier, monospace;
+    padding-right: 450px;
 }
 img{
     width: 200px;
     height: 200px;
-    border: 20px groove green;
+    border: 20px groove rgba(0, 128, 107, 0.671);
+    border-radius: 20px;
 }
 a{
     
