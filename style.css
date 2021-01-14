@@ -47,6 +47,7 @@ h2{
 p{
     font-family: 'Courier New', Courier, monospace;
     color: grey;
+    font-size: 20px;
     padding-right: 450px;
 }
 img{
@@ -61,7 +62,10 @@ a{
 .linkArea{
     padding-left: 20px;
     font-weight: bold;
+    text-decoration: solid;
 }
+
+
 button{
     border-radius: 300px;
     font-family: 'Courier New', Courier, monospace;
