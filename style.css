@@ -24,7 +24,7 @@ ul li{
     color: var(--c);
     font-size: 16px;
     font-family: monospace;
-    border: 2px solid;
+    border: 2px solid var(--c);
     border-radius: 0.5em;
     background-color: none;
     font-weight: bolder;
@@ -37,7 +37,31 @@ ul li{
     transition: 0.5s;
     margin: 1em;
 }
+ul li span{
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(158%);
+    border-radius: 58%;
+    left: calc((var(--b) -1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--b) - 1) * 0.1s);
+    z-index: -1;
+}
 
+ul li:hover {
+    color: black;
+}
+
+ul li:hover span{
+    transform:translateY(0) scale(2);
+}
+
+ul li span:nth-child(1) { --b: 1}
+ul li span:nth-child(2) { --b: 2}
+ul li span:nth-child(3) { --b: 3}
+ul li span:nth-child(4) { --b: 4}
 
 body{
     background-color: black;
