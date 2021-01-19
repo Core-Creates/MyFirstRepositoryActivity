@@ -12,12 +12,13 @@ header{
     border-radius: 0px;
     text-align: center;
 
-
 }
 ul{
     list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+    margin-top: 0px;
+    margin-left: 600px;
+    margin-right: 600px;
+    padding: 20px;
 }
 ul li{
     --c: rgba(219, 255, 91, 0.699);
@@ -36,20 +37,26 @@ ul li{
     z-index: 1;
     transition: 0.5s;
     margin: 1em;
+
+
 }
 ul li span{
     position: absolute;
-    width: 25%;
+    width: 20%;
     height: 100%;
     background-color: var(--c);
-    transform: translateY(158%);
-    border-radius: 58%;
-    left: calc((var(--b) -1) * 25%);
-    transition: 0.5s;
-    transition-delay: calc((var(--b) - 1) * 0.1s);
-    z-index: -1;
+    transform: translateY(100%);
+    border-radius: 1000px;
+    left: calc(20%);
+    transition: 1s;
+    /*transition-delay: calc((var(--b) - 0.2) * 0.1s); */
+    z-index: -200;
 }
 
+ul li span{
+    
+    border-radius: 50%;
+}
 ul li:hover {
     color: black;
 }
@@ -58,10 +65,77 @@ ul li:hover span{
     transform:translateY(0) scale(2);
 }
 
-ul li span:nth-child(1) { --b: 1}
-ul li span:nth-child(2) { --b: 2}
-ul li span:nth-child(3) { --b: 3}
-ul li span:nth-child(4) { --b: 4}
+/* First bubble*/
+ul li span:nth-child(1) { 
+    --b: 1;
+    top: 0px;
+    left: -20px;
+}
+
+/* second bubble*/
+ul li span:nth-child(2) { 
+    
+    --b: 2;
+    top: 20px;
+    left: 42px;
+    
+    
+}
+
+/* third bubble*/
+ul li span:nth-child(3) { 
+    
+    --b: 3;
+    top: 10px;
+    left: 90px;
+    
+}
+
+/* Fourth bubble*/
+ul li span:nth-child(4) { 
+    
+    --b: 4;
+    top: 40px;
+    left: 140px;
+    
+}
+
+/* Fifth bubble*/
+ul li span:nth-child(5) { 
+    
+    --b: 5;
+    top: 60px;
+    left: 180px;
+    
+}
+
+/* Sixth bubble*/
+ul li span:nth-child(6) { 
+    
+    --b: 6;
+    animation-delay: 1s;
+    top:15px;
+    left: 149px;
+}
+
+ul li span:nth-child(7) { 
+    
+    --b: 3;
+    animation-delay: 0.5s;
+    top:50px;
+    left: 15px;
+}
+
+ul li span:nth-child(8) { 
+    
+    --b: 5;
+    animation-delay: 0.3s;
+    top:20px;
+    left: 200px;
+}
+
+
+
 
 body{
     background-color: black;
